@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* @package     CedPrettify
+* @subpackage  com_cedprettify
+* @copyright   Copyright (C) 2013-2016 galaxiis.com All rights reserved.
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*
+* @license GNU GPL v3 (http://www.gnu.org/licenses/gpl.txt)
+-->
+<extension type="plugin" version="3.0" method="upgrade" group="system">
+    <name>PLG_SYSTEM_CEDPRETTIFY</name>
+    <creationDate>2016-05-30</creationDate>
+    <version>1.1.0</version>
+
+    <author>Galaxiis</author>
+    <authorEmail>galaxiiscom@gmail.com</authorEmail>
+    <authorUrl>www.galaxiis.com</authorUrl>
+
+    <copyright>Copyright (C) 2013-2016 galaxiis.com All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL 3.0</license>
+
+    <description>PLG_SYSTEM_CEDPRETTIFY_XML_DESCRIPTION</description>
+
+    <files>
+        <filename plugin="cedprettify">cedprettify.php</filename>
+        <filename>index.html</filename>
+        <folder>fields</folder>
+        <folder>language</folder>
+		<folder>assets</folder>
+    </files>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_system_cedprettify.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.plg_system_cedprettify.ini</language>
+        <language tag="de-DE">de-DE/de-DE.plg_system_cedprettify.ini</language>
+    </languages>
+
+    <media>
+        <folder>plg_system_cedprettify</folder>
+    </media>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="plugins/system/cedprettify/fields">
+
+                <field
+                        name="linenumber"
+                        type="radio"
+                        value=""
+                        default="1"
+                        label="COM_PLUGINS_CEDPRETTIFY_LINENUMBER"
+                        description="COM_PLUGINS_CEDPRETTIFY_LINENUMBER_DESC"
+                        class="btn-group">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+                <field
+                        name="languages"
+                        type="list"
+                        value=""
+                        multiple="multiple"
+                        default="css,sql"
+                        label="COM_PLUGINS_CEDPRETTIFY_LANGUAGES"
+                        description="COM_PLUGINS_CEDPRETTIFY_LANGUAGES_DESC">
+
+                    <option value="aea">aea</option>
+                    <option value="agc">agc</option>
+                    <option value="apollo">apollo</option>
+                    <option value="basic">basic</option>
+                    <option value="cbm">cbm</option>
+                    <option value="cl">cl</option>
+                    <option value="clj">clj</option>
+                    <option value="css">css</option>
+                    <option value="dart">dart</option>
+                    <option value="el">el</option>
+                    <option value="erl">erl</option>
+                    <option value="erlang">erlang</option>
+                    <option value="fs">fs</option>
+                    <option value="go">go</option>
+                    <option value="hs">hs</option>
+                    <option value="lasso">lasso</option>
+                    <option value="lassoscript">lassoscript</option>
+                    <option value="latex">latex</option>
+                    <option value="lgt">lgt</option>
+                    <option value="lisp">lisp</option>
+                    <option value="ll">ll</option>
+                    <option value="llvm">llvm</option>
+                    <option value="logtalk">logtalk</option>
+                    <option value="ls">ls</option>
+                    <option value="lsp">lsp</option>
+                    <option value="lua">lua</option>
+                    <option value="matlab">matlab</option>
+                    <option value="ml">ml</option>
+                    <option value="mumps">mumps</option>
+                    <option value="n">n</option>
+                    <option value="nemerle">nemerle</option>
+                    <option value="pascal">pascal</option>
+                    <option value="proto">proto</option>
+                    <option value="r">r</option>
+                    <option value="rd">rd</option>
+                    <option value="rkt">rkt</option>
+                    <option value="rust">rust</option>
+                    <option value="s">s</option>
+                    <option value="scala">scala</option>
+                    <option value="scm">scm</option>
+                    <option value="Splus">Splus</option>
+                    <option value="sql">sql</option>
+                    <option value="ss">ss</option>
+                    <option value="swift">swift</option>
+                    <option value="tcl">tcl</option>
+                    <option value="tex">tex</option>
+                    <option value="vb">vb</option>
+                    <option value="vbs">vbs</option>
+                    <option value="vhd">vhd</option>
+                    <option value="vhdl">vhdl</option>
+                    <option value="wiki">wiki</option>
+                    <option value="xq">xq</option>
+                    <option value="xquery">xquery</option>
+                    <option value="yaml">yaml</option>
+                    <option value="yml">yml</option>
+                </field>
+
+                <!--http://jmblog.github.io/color-themes-for-google-code-prettify/-->
+                <field name="skins" type="skins" default="prettify" label="COM_PLUGINS_CEDPRETTIFY_SKINS"
+                       description="COM_PLUGINS_CEDPRETTIFY_SKINS_DESC">
+                    <option value="desert">COM_PLUGINS_CEDPRETTIFY_DESERT</option>
+                    <option value="doxy">COM_PLUGINS_CEDPRETTIFY_DOXY</option>
+                    <option value="github">COM_PLUGINS_CEDPRETTIFY_GITHUB</option>
+                    <option value="hemisu-dark">COM_PLUGINS_CEDPRETTIFY_HEMISUDARK</option>
+                    <option value="hemisu-light">COM_PLUGINS_CEDPRETTIFY_HEMISULIGHT</option>
+                    <option value="prettify">COM_PLUGINS_CEDPRETTIFY_PRETTIFY</option>
+                    <option value="sons-of-obsidian">COM_PLUGINS_CEDPRETTIFY_SONS</option>
+                    <option value="sunburst">COM_PLUGINS_CEDPRETTIFY_SUNBURST</option>
+                    <option value="tomorrow">COM_PLUGINS_CEDPRETTIFY_TOMORROW</option>
+                    <option value="tomorrow-night">COM_PLUGINS_CEDPRETTIFY_TOMORROWNIGHT</option>
+                    <option value="tomorrow-night-blue">COM_PLUGINS_CEDPRETTIFY_TOMORROWNIGHTBLUE</option>
+                    <option value="tomorrow-night-bright">COM_PLUGINS_CEDPRETTIFY_TOMORROWNIGHTBRIGHT</option>
+                    <option value="tomorrow-night-eighties">COM_PLUGINS_CEDPRETTIFY_TOMORROWNIGHTEIGHTIES</option>
+                    <option value="vibrant-ink">COM_PLUGINS_CEDPRETTIFY_VIBRANTINK</option>
+                    <option value="tranquil-heart">Tranquil Heart</option>
+                    <option value="atelier-cave-dark">Atelier Cave Dark</option>
+                    <option value="atelier-cave-light">Atelier Cave Light</option>
+                    <option value="atelier-dune-dark">Atelier Dune Dark</option>
+                    <option value="atelier-dune-light">Atelier Dune Light</option>
+                    <option value="atelier-estuary-dark">Atelier Estuary Dark</option>
+                    <option value="atelier-estuary-light">Atelier Estuary Light</option>
+                    <option value="atelier-forest-dark">Atelier Forest Dark</option>
+                    <option value="atelier-forest-light">Atelier Forest Light</option>
+                    <option value="atelier-heath-dark">Atelier Heath Dark</option>
+                    <option value="atelier-heath-light">Atelier Heath Light</option>
+                    <option value="atelier-lakeside-dark">Atelier lakeside Dark</option>
+                    <option value="atelier-lakeside-light">Atelier lakeside light</option>
+                    <option value="atelier-plateau-dark">Atelier Plateau Dark</option>
+                    <option value="atelier-plateau-light">Atelier Plateau Light</option>
+                    <option value="atelier-savanna-dark">Atelier Savanna Dark</option>
+                    <option value="atelier-savanna-light">Atelier Savanna Light</option>
+                    <option value="atelier-seaside-dark">Atelier Seaside Dark</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+
+    <config/>
+</extension>
