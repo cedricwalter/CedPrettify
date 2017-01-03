@@ -1,31 +1,30 @@
-Joomla Extension CedPrettify for your Joomla site
+# CedPrettify for Joomla
 
-This is a Joomla plugin
+Simple and lightweight syntax highlighting of source code snippets using Google Code Prettify JavaScript library for [Joomla!](https://www.joomla.org).
 
-Product page https://www.galaxiis.com/cedprettify-showcase/
+* Used by code.google.com and stackoverflow.com!
+* Works on HTML pages,
+* 31 styles are available to match your blog style,
+* All C-like, Bash-like, and XML-like languages supported,
+* 57 languages supported,
+* Cross Browser Support
+* and more...
 
-Syntax highlighting of source code snippets in an html page!
+[More details](https://www.galaxiis.com/cedprettify-showcase/) 
 
-How CedPrettify Works
+## Demo
+[https://www.galaxiis.com/cedprettify-demo/](https://www.galaxiis.com/cedprettify-demo/)
 
-Simple and lightweight syntax highlighting of source code snippets using Google Code Prettify JavaScript library for Joomla.
+## Documentation
+[https://www.galaxiis.com/cedprettify-doc/](https://www.galaxiis.com/cedprettify-doc/)
 
-- Used by code.google.com and stackoverflow.com!
-- Works on HTML pages,
-- 31 styles are available to match your blog style,
-- All C-like, Bash-like, and XML-like languages supported,
-- 57 languages supported,
-- Cross Browser Support
-- and more...
+## Joomla JED
+[https://www.galaxiis.com/cedprettify-jed/](https://www.galaxiis.com/cedprettify-jed/)
 
-Review CedPrettify in Joomla Extension Directory
-https://www.galaxiis.com/cedprettify-jed/
+## Download
+### free version
+You need to [register](https://www.galaxiis.com/index.php/member-access?view=registration) for free and be logged-in to see the [download link](https://www.galaxiis.com/cedprettify-download/)  
 
-Download CedPrettify
-https://www.galaxiis.com/cedprettify-download/
+### Premium version
 
-CedPrettify Documentation
-https://www.galaxiis.com/cedprettify-doc/
-
-CedPrettify Showcase
-https://www.galaxiis.com/cedprettify-demo/
+You need to [register](https://www.galaxiis.com/index.php/member-access?view=registration) for free, you need a [valid license](https://www.galaxiis.com/cedprettify-subscribe/) to see the [download link](https://www.galaxiis.com/cedprettify-download-club/)

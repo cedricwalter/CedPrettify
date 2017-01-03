@@ -47,21 +47,21 @@ class plgSystemCedPrettify extends JPlugin
             $document->addStyleDeclaration("li.L0, li.L1, li.L2, li.L3,li.L5, li.L6, li.L7, li.L8 { list-style-type: decimal !important }");
         }
 
-        $document->addStyleSheet(JURI::root(true) . "/media/plg_system_cedprettify/skins/$skins.css");
+        $document->addStyleSheet(JURI::base() . "/media/plg_system_cedprettify/skins/$skins.css");
 
         $languages = $this->params->get('languages');
         if (is_array($languages)) {
             $url .= "&lang=" . implode(",", $languages);
 
             foreach($languages as $language) {
-                $document->addScript(JURI::root(true) . "/media/plg_system_cedprettify/lang-$language.js");
+                $document->addScript(JURI::base() . "/media/plg_system_cedprettify/lang-$language.js");
             }
         } else {
             $url .= "&lang=".$languages;
-            $document->addScript(JURI::root(true) . "/media/plg_system_cedprettify/lang-$languages.js");
+            $document->addScript(JURI::base() . "/media/plg_system_cedprettify/lang-$languages.js");
         }
 
-        $document->addScript(JURI::root(true) . '/media/plg_system_cedprettify/run_prettify.js' . $url);
+        $document->addScript(JURI::base() . '/media/plg_system_cedprettify/run_prettify.js' . $url);
 
         //$document->addScriptDeclaration("\nwindow.addEvent('domready', function() { prettyPrint();});\n");
 

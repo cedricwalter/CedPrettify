@@ -20,8 +20,8 @@
 -->
 <extension type="plugin" version="3.0" method="upgrade" group="system">
     <name>PLG_SYSTEM_CEDPRETTIFY</name>
-    <creationDate>2016-08-03</creationDate>
-    <version>1.2.0</version>
+    <creationDate>2016-12-31</creationDate>
+    <version>1.2.1</version>
 
     <author>Galaxiis</author>
     <authorEmail>galaxiiscom@gmail.com</authorEmail>
@@ -70,9 +70,10 @@
                         type="list"
                         value=""
                         multiple="multiple"
-                        default="css,sql"
+                        default=""
                         label="COM_PLUGINS_CEDPRETTIFY_LANGUAGES"
-                        description="COM_PLUGINS_CEDPRETTIFY_LANGUAGES_DESC">
+                        description="COM_PLUGINS_CEDPRETTIFY_LANGUAGES_DESC"
+                        required="true">
 
                     <option value="aea">aea</option>
                     <option value="agc">agc</option>
